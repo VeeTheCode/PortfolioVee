@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กิจกรรม | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="activities.html" class="active">กิจกรรม</a>
+    <a href="gallery.html">แกลเลอรี่</a>
+    <a href="feedback.html">คำติชม</a>
+  </nav>
+
+  <section class="activities">
+    <h2>กิจกรรมและเกียรติบัตร</h2>
+
+    <div class="activity">
+      <h3>กิจกรรม: แข่งขันสร้างเว็บไซต์</h3>
+      <p><b>หน้าที่:</b> ออกแบบและพัฒนาเว็บโดยใช้ HTML, CSS</p>
+      <img src="images/activity1.jpg" alt="แข่งขันสร้างเว็บไซต์" onclick="openImage(this)">
+    </div>
+
+    <div class="activity">
+      <h3>กิจกรรม: จิตอาสาโรงเรียน</h3>
+      <p><b>หน้าที่:</b> วาดภาพตกแต่งและจัดกิจกรรมเด็กเล็ก</p>
+      <img src="images/activity2.jpg" alt="กิจกรรมจิตอาสา" onclick="openImage(this)">
+    </div>
+
+    <!-- เพิ่มกิจกรรมอื่น ๆ ได้ตามต้องการ -->
+
+  </section>
+
+  <!-- กล่องขยายรูป -->
+  <div id="lightbox" class="lightbox" onclick="closeImage()">
+    <img id="expandedImg" src="">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Portfolio ของ [ชื่อคุณ]</p>
+  </footer>
+
+</body>
+</html>

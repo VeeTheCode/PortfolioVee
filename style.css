@@ -1,0 +1,162 @@
+body {
+  font-family: "Prompt", sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover, .active {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* รูปโปรไฟล์ */
+.profile-img {
+  width: 180px;
+  border-radius: 10px; /* <-- มุมโค้งเล็กน้อย */
+  margin-top: 20px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2); /* เพิ่มเงานิดหน่อยให้ดูเรียบหรู */
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* จัดกลุ่มรูปข้างๆ ให้ลอยด้านข้าง */
+.side-activities {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  pointer-events: none; /* กันไม่ให้รบกวนการคลิกส่วนอื่น */
+}
+
+/* รูปแต่ละรูป */
+.side-activities img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ให้รูปเอียง */
+.tilt-left {
+  transform: rotate(-8deg);
+}
+
+.tilt-right {
+  transform: rotate(8deg);
+}
+
+/* เวลา hover ให้ตรงกลับ */
+.side-activities img:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+
+/* เกียรติบัตร */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* กิจกรรม */
+.activity {
+  background: white;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.activity img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* ฟอร์ม */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แกลเลอรี่ภาพ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="activities.html">กิจกรรม</a>
+    <a href="gallery.html" class="active">แกลเลอรี่</a>
+    <a href="feedback.html">คำติชม</a>
+  </nav>
+
+  <section class="gallery-section">
+    <h2>แกลเลอรี่ภาพ</h2>
+    <div class="gallery">
+      <img src="images/gallery1.jpg" alt="ภาพ 1" onclick="openImage(this)">
+      <img src="images/gallery2.jpg" alt="ภาพ 2" onclick="openImage(this)">
+      <img src="images/gallery3.jpg" alt="ภาพ 3" onclick="openImage(this)">
+      <img src="images/gallery4.jpg" alt="ภาพ 4" onclick="openImage(this)">
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox" onclick="closeImage()">
+    <img id="expandedImg" src="">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Portfolio ของ [ชื่อคุณ]</p>
+  </footer>
+
+</body>
+</html>
